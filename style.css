@@ -1,0 +1,89 @@
+html {
+  --s: 120px; /* control the size*/
+
+  --_g: radial-gradient(#0000 70%, #1a2030 71%);
+  background: var(--_g), var(--_g) calc(var(--s) / 2) calc(var(--s) / 2),
+    conic-gradient(#0f9177 25%, #fdebad 0 50%, #d34434 0 75%, #b5d999 0);
+  background-size: var(--s) var(--s);
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.login-form {
+  width: 50%;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.login-form h4,
+h1 {
+  margin: 0px;
+}
+.login-form h4 {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+.form-group {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.form-group input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+.btn {
+  width: 315px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: #0f9177;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #c3620d;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+}
+.img-profile {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.recover-link {
+  color: #0f9177;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
