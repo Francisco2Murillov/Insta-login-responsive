@@ -87,3 +87,22 @@ h1 {
   font-size: 14px;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  body {
+    justify-content: center;
+  }
+  .login-form {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+  }
+  .login-form .header,
+  .form-group,
+  .recover-link {
+    transform: translateY(-80px);
+  }
+  .img-profile {
+    transform: translateY(-70px);
+    outline: white solid 10px;
+  }
+}
